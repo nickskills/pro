@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  --colorSalmon: salmon;
+  --colorWhite: white;
+  --colorLightGray: #f4f4f4;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contacts__form {
+  border: 1px solid var(--colorSalmon);
+  border-radius: 24px;
+  padding: 30px 40px;
+}
+.contacts__title {
+  max-width: 500px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 105%;
+}
+.contacts__subtitle {
+  font-size: 20px;
+  color: lightslategray;
+  padding-top: 20px;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+.contacts__link-rules {
+  text-decoration: none;
+  color: var(--colorSalmon);
+}
+.form__contacts {
+  display: flex;
+  max-width: 600px;
+  flex-flow: wrap;
+  gap: 20px 30px;
+}
+.form__contact {
+  padding: 16px;
+  border-radius: 12px;
+  outline: none;
+  background-color: var(--colorLightGray);
+  border: 1px solid var(--colorLightGray);
+  min-width: 280px;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.form__contact::placeholder {
+  font-size: 17px;
+}
+.form__contact:hover {
+  background-color: #e8e8e8;
+}
+.form__contact:active {
+  background-color: var(--colorWhite);
+  border: 1px solid;
+}
+.form__contact:focus {
+  border: 1px solid var(--colorSalmon);
+  background-color: var(--colorWhite);
+}
+.form__contact:entered {
+  background-color: var(--colorWhite);
+}
+.button {
+  background-color: var(--colorSalmon);
+  opacity: 0.6;
+  min-width: 170px;
+  color: var(--colorWhite);
+  margin-right: 50px;
+  cursor: pointer;
+}
+.rules {
+  font-size: 14px;
+  display: inline-block;
+  color: lightslategrey;
+  cursor: pointer;
+  align-items: center;
+  width: 60%;
+  user-select: none;
+  /* pointer-events: none */
+}
+.submit {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.rules__check {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.contacts__form {
+  background-image: url('../images/letters.png');
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: top right;
+}
+.inputError {
+  box-shadow: 0px 0px 5px 1px rgb(255, 0, 0);
+}
+.inputGood {
+  box-shadow: 0px 0px 5px 1px rgb(0, 255, 0);
+}

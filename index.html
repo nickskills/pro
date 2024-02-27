@@ -2,12 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="script.js" defer></script>
     <style>
-      .container {
-        width: 400px;
+      /* .container {
+        width: 300px;
         height: 300px;
       }
 
@@ -17,13 +21,62 @@
 
       .color-red {
         color: red;
-      }
+      } */
     </style>
   </head>
   <body>
-    <ul>
+    <!-- <ul>
       <li><a href="favs.html">to favorite</a></li>
     </ul>
-    <div class="wrap"></div>
+    <div class="wrap"></div> -->
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__form">
+          <h3 class="contacts__title">Оставьте контакты и мы свяжемся с вами</h3>
+          <p class="contacts__subtitle">
+            Перед отправкой формы, пожалуйста, ознакомьтесь с
+            <a href="#home" class="contacts__link-rules">правилами модерации</a>.
+          </p>
+          <form class="form" method="post">
+            <div class="form__contacts">
+              <div class="form__info">
+                <input
+                  class="form__contact"
+                  name="name"
+                  id="name"
+                  type="text"
+                  placeholder="Ваше имя"
+                  maxlength="15"
+                />
+              </div>
+              <div class="form__info">
+                <input
+                  class="form__contact"
+                  name="phone"
+                  id="phone"
+                  type="tel"
+                  placeholder="Ваш телефон"
+                  maxlength="10"
+                />
+              </div>
+              <div class="form__info">
+                <input class="form__contact" name="email" type="email" placeholder="E-mail" maxlength="25" />
+              </div>
+              <div class="form__info">
+                <input class="form__contact" name="nickname" type="text" placeholder="Ник в телеграме" />
+              </div>
+            </div>
+            <div class="submit">
+              <button type="submit" class="form__contact button">Отправить заявку</button>
+              <input class="rules__check" type="checkbox" name="rules" id="rules" value="yes" />
+              <label for="rules" class="rules">
+                Нажимая на кнопку "Отправить заявку", я даю согласие на обработку персональных данных, а также
+                соглашаюсь с политикой конфиденциальности
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
